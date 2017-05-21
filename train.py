@@ -4,13 +4,13 @@ import lmdb
 import cv2
 from PIL import Image
 
-sys.path.insert(0,'/home/ayah/caffe/python')
+#sys.path.insert(0,'/home/ayah/caffe/python')
 import caffe
 
-input_path= "/mnt/eg4_data/Image_dataset/Agg_AMT_Candidates/"
-output_path= "/mnt/eg4_data/Image_dataset/Output_dataset/"
+input_path= "/Agg_AMT_Candidates/"
+output_path= "/train_resized/"
 instanceList = []
-gt_file = open('/home/ayah/PycharmProjects/npy_read/test.txt', "r")
+gt_file = open('/train.txt', "r")
 
 while (True):
     line = gt_file.readline()
